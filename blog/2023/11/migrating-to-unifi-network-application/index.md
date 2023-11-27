@@ -12,7 +12,7 @@ tags:
   - mongodb
 description: Linuxserver.io is deprecating the unifi-controller image in favor of unifi-network-application image on 2024-01-01, so it's now or never on switching.
 disableComments: true
-draft: true
+draft: false
 ---
 ## The Backstory
 In my home network, I use Ubiquiti products for my Wireless Access Points. In particular I have Unifi AP AC Lite deployed in both my Apartment and in my Parent's home for Wifi. Recently I also bought a used Unifi Standard USW-24 Managed Switch, that I need to migrate to as I've been using a Dell PowerConnect 2824 Managed Switch for a several years now.
