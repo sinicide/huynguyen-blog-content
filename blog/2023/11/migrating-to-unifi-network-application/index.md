@@ -51,7 +51,7 @@ We need to create a new docker-compose file that containers the Unifi Network Ap
 
 Below is what I'm using for my deployment.
 
-```
+```docker
 version: '3'
 services:
   unifi-db:
@@ -111,7 +111,7 @@ networks:
 ```
 ## The Mongo Requirement
 So starting off is the MongoDB deployment. Here, I'm following the guidance of [linuxserver.io](https://docs.linuxserver.io/images/docker-unifi-network-application/?h=unifi+network#setting-up-your-external-database) and configuring Mongo with version `4.4.25` as it's document that Unifi Network Application supporting only Mongo `3.6.x` to `4.4.x` versions. Here I'm also specifying an initialization file that will create user for the unifi database.
-```
+```docker
 unifi-db:
   image: mongo:4.4.25
   container_name: unifi-db
@@ -123,7 +123,7 @@ unifi-db:
   restart: unless-stopped
 ```
 The `init-mongo.js` as referenced by linuxserver.io, this create our `unifi-user` to connect to the database named `unifi`
-```
+```javascript
 db.getSiblingDB("unifi").createUser({user: "unifi-user", pwd: "unifi-password", roles: [{role: "dbOwner", db: "unifi"}]});
 db.getSiblingDB("unifi_stat").createUser({user: "unifi-user", pwd: "unifi-password", roles: [{role: "dbOwner", db: "unifi_stat"}]});
 ```
@@ -132,7 +132,7 @@ In my setup, I have multiple docker-compose files that use a common Network so t
 No ports are exposed here because we don't need to directly access anything ourselves.
 
 ## Unifi Network Application
-```
+```docker
 unifi-network-application:
   image: lscr.io/linuxserver/unifi-network-application:8.0.7
   container_name: unifi-network-application
@@ -168,7 +168,7 @@ Finally new Docker Environment configurations are included to tell our Unifi Net
 
 ## Bonus Traefik configuration
 I think most of the Self-Hosted community seems to use Nginx Proxy Manager, but in case you're using [Traefik Proxy](https://traefik.io/traefik/) here's what I'm using, my Traefik Proxy looks at docker labels to configure the routing.
-```
+```docker
 labels:
   - "traefik.http.routers.unifi-network-application-http.entrypoints=web"
   - "traefik.http.routers.unifi-network-application-http.middlewares=redirect-to-https@file"
@@ -186,14 +186,14 @@ The above specifies an `http` entrypoint, this is port `80`that does a redirect 
 
 Next we're specifying the `loadBalancer` port, which specifies the Unifi Web Admin Port `8443`
 
-```
+```docker
 - "traefik.http.services.unifi-network-application-https.loadBalancer.server.port=8443"
 - "traefik.http.services.unifi-network-application-https.loadBalancer.server.scheme=https"
 ```
 So essentially Web Request goes from `80` -> `443` -> `8443`
 
 The Unifi Application handles TLS itself, so we'll include HTTP headers and ignore the TLS cert presented by the Unifi Application.
-```
+```docker
 - "traefik.http.routers.unifi-network-application-https.middlewares=unifi-network-application-headers"
 - "traefik.http.middlewares.unifi-network-application-headers.headers.customRequestHeaders.Authorization="
 - "traefik.http.middlewares.unifi-network-application-headers.headers.customRequestHeaders.X-Forwarded-Proto=https"
