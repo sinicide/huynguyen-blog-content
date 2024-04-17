@@ -2,7 +2,7 @@ name: Send submodule updates to huynguyen-blog-build Repo Stage Branch
 
 on:
   push:
-    branches: 
+    branches:
       - draft
 
 jobs:
@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        with: 
+      - uses: actions/checkout@v4.1.1
+        with:
           repository: sinicide/huynguyen-blog-build
           ref: stage
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
@@ -29,3 +29,4 @@ jobs:
           git add .
           git commit -m "Update submodules" || echo "No changes to commit"
           git push
+
