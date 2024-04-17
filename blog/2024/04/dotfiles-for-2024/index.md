@@ -13,7 +13,7 @@ tags:
   - github
 description: Going over my dotfiles setup for 2024. Here's to optimizing my workflow!
 disableComments: true
-draft: true
+draft: false
 ---
 
 ## Intro
