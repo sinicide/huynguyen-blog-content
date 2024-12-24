@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "fd490c482be03dc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "6dba3ca98cd388a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2453395511a336ad",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8b556f290e920381",
+    "type": "split",
+    "children": [
+      {
+        "id": "25102bf42de562f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3983787af7b8dc56",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "adfd9ad7b107ca1f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a7f771814a1c10cd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "083df06f6da5e55c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8921ab1e5fe8adfe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bef6a194b962ccfc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "ddde8822b61938ba",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "cdc68a6fa955cdb1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a240fac5266ce704",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "2453395511a336ad",
+  "lastOpenFiles": [
+    "blog/2024/12/24/last-of-the-year/index.md",
+    "blog/2024/12/24/last-of-the-year",
+    "blog/2024/12/24",
+    "templates/create blog post.md",
+    "templates/insert shortcode quote.md",
+    "templates/insert shortcode tweet.md",
+    "templates/insert shortcode prompt.md",
+    "templates/insert shortcode image.md",
+    "templates/insert shortcode figure.md",
+    "blog/2024/12/24/here-we-go-again/index.md",
+    "templates/insert shortcode youtube.md",
+    "blog/2024/12/24/here-we-go-again",
+    "templates/update lastMod.md",
+    "blog/2024/12/24/another-post-here/index.md",
+    "blog/2024/12/24/another-post-here",
+    "blog/2024/09/moving-apartments-and-moving-the-home-lab/index.md",
+    "blog/2024/12/24/here-again-mother/index.md",
+    "blog/2024/12/24/here-again-mother",
+    "blog/2024/12/24/here-we-go-again-tim/index.md",
+    "blog/2024/12/24/here-we-go-again-tim",
+    "blog/2024/12/24/another-post/index.md",
+    "blog/2024/12/24/another-post",
+    "blog/2024/12/24/here-again-today/index.md",
+    "blog/2024/12/24/here-again-today",
+    "blog/2024/12/24/new-post/index.md",
+    "blog/2024/12/24/new-post",
+    "templates/post.md",
+    "blog/2024/12/24/another-note/index.md",
+    "blog/2024/12/24/another-note",
+    "blog/2024/12/24/here-we-go-today/index.md",
+    "blog/2024/12/24/here-again/index.md",
+    "blog/2024/12/24/do-i-exist/index_101217.md",
+    "blog/2024/12/24/here-is-a-test/index_101206.md",
+    "blog/2024/12/24/this-is-another-path/index.md",
+    "Untitled 1.md"
+  ]
+}
