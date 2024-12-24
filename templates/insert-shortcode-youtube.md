@@ -1,0 +1,1 @@
+<%* const youtube_url = await tp.system.prompt("Enter Youtube URL") %>{{< youtube <% youtube_url.replace(/^.*v=/, '') %> >}}
