@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6dba3ca98cd388a2",
+        "id": "5013afa094751ed2",
         "type": "tabs",
         "children": [
           {
-            "id": "2453395511a336ad",
+            "id": "7c8a12298f787526",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "083df06f6da5e55c",
@@ -158,8 +159,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2453395511a336ad",
+  "active": "7c8a12298f787526",
   "lastOpenFiles": [
+    "blog/2024/12/26/favorite-thangs-in-2024/index.md",
+    "blog/2024/12/26/favorite-thangs-in-2024/images/bambulab_a1_mini.jpg",
+    "blog/2024/12/26/favorite-thangs-in-2024/images/steamdeck.jpg",
+    "blog/2024/12/26/favorite-thangs-in-2024/images/hinamatsuri.jpg",
+    "blog/2024/12/26/favorite-thangs-in-2024/images/the_brothers_sun.jpg",
+    "blog/2024/12/26/favorite-thangs-in-2024/images/ted_lasso.jpg",
     "blog/2024/12/24/last-of-the-year/index.md",
     "blog/2024/12/24/last-of-the-year",
     "blog/2024/12/24",
