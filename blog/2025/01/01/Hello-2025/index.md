@@ -68,7 +68,7 @@ module:
         - "templates/**"
 ```
 
-This was all done and completed with the last [post]({{ ref "/blog/2024/12/26/favorite-thangs-in-2024/index" }} "Favorite Thangs in 2024") I made.
+This was all done and completed with the last [post]({{< ref "/blog/2024/12/26/favorite-thangs-in-2024/index" >}} "Favorite Thangs in 2024") I made.
 
 ## Updating the Theme
 
@@ -159,4 +159,3 @@ With the theme update it was time to create a Pull Request to push the changes t
 So as you can see pretty much everything is intact. One minor change I did decide to do was change the strong text colors for headers and links to a white-ish color instead of the previous dark grey-ish ones, which should help with readability I suppose.
 
 Anyhow, Happy New Years! Here's to accomplishing more things in 2025!
-
