@@ -21,10 +21,13 @@ description: Kicking off 2025 with a barely noticeable change to this blog.
 disableComments: true
 draft: false
 ---
+
 Starting off 2025 with a small but major update to this blog. I've spent the past few days working on some needed maintenance for the theme and how this blog is deployed and figured I'd capture this information in the first blog post of the year.
 
 ## Updating Blog Post Creation workflow
+
 How I have this blog structured is that I utilized 3 separate Github repositories to ultimately build the blog with [Hugo](https://gohugo.io/)
+
 - [Main Build](https://github.com/sinicide/huynguyen-blog-build)
 - [Theme](https://github.com/sinicide/hugo-theme-hello-bulma)
 - [Content](https://github.com/sinicide/huynguyen-blog-content)
@@ -32,7 +35,8 @@ How I have this blog structured is that I utilized 3 separate Github repositorie
 This allows for flexibility if I one day decided I wanted to move to a different Static Site Generator or if I want change up the theme without specifically affecting the other repos. Obviously I could keep everything in a single repo, but I really want to utilize git's changelog to track markdown publicly.
 
 Hugo can generate blog posts via the following command.
-```cli
+
+```
 hugo new content <content_location>/blog_post.md
 ```
 
@@ -41,9 +45,11 @@ This will generate a markdown file using pre-determined frontmatter at the locat
 Instead of using Hugo to generate new blog posts, I've opted to use an [Obsidian](https://obsidian.md/) vault to really power up my blog post creation flow.
 
 ## Why use Obsidian?
+
 I've been using Obsidian for note taking in my private and professional life. At it's base level, it's just a super neat markdown note taking app, but with a few community plugins it allows me to automate blog post generation as well as `lastMod` frontmatter update on changes.
 
 In particular I'm using the following 2 Community Plugins
+
 - [Templater](https://github.com/SilentVoid13/Templater)
 - [Update time on edit](https://github.com/beaussan/update-time-on-edit-obsidian)
 
@@ -52,6 +58,7 @@ This gives a fairly nice gui experience as I can accomplish a lot of different w
 What's neat is that the Obsidian configuration itself now lives in this content repo as a dot folder, which is handy because Hugo will ignore this directory in content. However the templates that I use are in a regular folder, which means I also needed to update the Main Build repo to ignore it as non-content otherwise it'll break when trying to compile the site.
 
 This required a new inclusion of content [module](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) in Hugo's configuration yaml to exclude it from being processed. What's cool about this is that I could also specify different content directories within the same repo for different environment builds if I wanted. But for now, I only need it as a way to exclude a specific directory.
+
 ```yaml
 module:
   mounts:
@@ -64,6 +71,7 @@ module:
 This was all done and completed with the last [post]({{ ref "/blog/2024/12/26/favorite-thangs-in-2024/index" }} "Favorite Thangs in 2024") I made.
 
 ## Updating the Theme
+
 Now let's talk about what I updated for the theme. In case you're not aware, my theme is based on a no longer maintained public theme called [Hello Friend](https://github.com/panr/hugo-theme-hello-friend) which I've refactored with the [Bulma](https://bulma.io/) Framework into what I've cutely named [Hello Bulma](https://github.com/sinicide/hugo-theme-hello-bulma). Dragon Ball Z was a big part of my childhood, so I have a soft spot for this CSS framework.
 
 - Updated Font Awesome Free 6 to `6.7.2`, prior version used was `6.4.2` (so not a major jump)
@@ -71,9 +79,11 @@ Now let's talk about what I updated for the theme. In case you're not aware, my 
 - Update local Hugo Container to use version `0.140.1` in Main Build repo
 
 ### Updating the Dockerfile
+
 In the main repo, I have a local Dockerfile, which I use to build a local Hugo container to stand up my website for local testing. This allows me to not have to install Hugo locally, because I run Archlinux (by the way), which means that I'm at the mercy of a Rolling Release structure for packages. So if I install Hugo locally via pacman, it'll be updated whenever there's a new update. That's not what I want for anything I push to production, anything that is going to be considered "production" needs to be deterministic and remain on consistent versions.
 
 So let's go over some of the major changes to my Dockerfile
+
 ```dockerfile
 ENV HUGO_VERSION 0.140.1
 ...
@@ -99,7 +109,9 @@ So for the most part I just copy-pasted what was in [Hugo's Documentation](https
 The use of Dart Sass is also crucial here because Bulma V1 is built with it according to their [Migration documentation](https://bulma.io/documentation/start/migrating-to-v1/#what-changes).
 
 ### Migrating to Bulma v1
+
 As with any major software changes, it's always good to read any official documentation to account for any breaking changes. Luckily Bulma provides us 2 major recommendations/changes.
+
 - `Tiles` are deprecated in favor of `Smart Grid` (I don't use either so this is irrelevant to me)
 - Use of `@import` is not recommended
 
@@ -108,6 +120,7 @@ Now I've been using `@import` to import specific components from the Bulma sass 
 Unfortunately Font Awesome 6 still uses `@import` in it's scss files, so I'll be keeping this around until it's change.
 
 But now my `bulma.scss` file looks like
+
 ```scss
 // bulma.io v1.0.3
 @use "../bulma/sass/<component>" (
@@ -125,6 +138,7 @@ But now my `bulma.scss` file looks like
 @import "../fontawesome/<filename>.scss";
 ...
 ```
+
 Apparently the ordering of `@use` , `@forward` , and `@import` here is important. I ran into some errors when compiling the CSS, so learned a lesson on that ordering. Had to spend a bit of time reading through the [Sass documentation](https://sass-lang.com/documentation/at-rules/forward/) on the usage of `@forward` and doing a bit of back and forth testing to ensure everything compiled and rendered like before.
 
 Finally one more thing to note is how do we tell Hugo to use Dart Sass to compile these Sass files.
@@ -139,8 +153,10 @@ Finally one more thing to note is how do we tell Hugo to use Dart Sass to compil
 This follows [Hugo](https://gohugo.io/hugo-pipes/transpile-sass-to-css/#usage)'s Guidance on the use of `toCSS` with optional flags, unless specified it'll default to use LibSass.
 
 ## Pushing to Production
+
 With the theme update it was time to create a Pull Request to push the changes to master branch, which in turned triggered a commit on the Main Build repo with the new theme changes and is watched by Cloudflare for any changes to my Main Build repo to trigger a new deployment.
 
 So as you can see pretty much everything is intact. One minor change I did decide to do was change the strong text colors for headers and links to a white-ish color instead of the previous dark grey-ish ones, which should help with readability I suppose.
 
 Anyhow, Happy New Years! Here's to accomplishing more things in 2025!
+
