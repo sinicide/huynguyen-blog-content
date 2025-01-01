@@ -143,11 +143,16 @@ Apparently the ordering of `@use` , `@forward` , and `@import` here is important
 
 Finally one more thing to note is how do we tell Hugo to use Dart Sass to compile these Sass files.
 
-```htmx
+```html
 <!-- Theme CSS -->
-{{ $opts := dict "transpiler" "dartsass" }}
-{{ $style := resources.Get "scss/custom/bulma.scss" | toCSS $opts | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" />
+{{ $opts := dict "transpiler" "dartsass" }} {{ $style := resources.Get
+"scss/custom/bulma.scss" | toCSS $opts | minify | fingerprint }}
+<link
+  rel="stylesheet"
+  href="{{ $style.RelPermalink }}"
+  integrity="{{ $style.Data.Integrity }}"
+  crossorigin="anonymous"
+/>
 ```
 
 This follows [Hugo](https://gohugo.io/hugo-pipes/transpile-sass-to-css/#usage)'s Guidance on the use of `toCSS` with optional flags, unless specified it'll default to use LibSass.
