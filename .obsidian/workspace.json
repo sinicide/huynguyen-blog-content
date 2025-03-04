@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "21f7cc036925d13c",
+        "id": "4fe5dbb834d32c3b",
         "type": "tabs",
         "children": [
           {
-            "id": "b33282a506d2e918",
+            "id": "9f29fd117593f97a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -159,8 +159,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b33282a506d2e918",
+  "active": "9f29fd117593f97a",
   "lastOpenFiles": [
+    "blog/2025/03/04/email-challenges/index.md",
+    "blog/2024/12/26/favorite-thangs-in-2024/index.md",
+    "blog/2025/03/04/Email-Challenges/images/smtp2go.png",
+    "blog/2025/03/04/email-challenges/images/smtp2go.jpg",
+    "blog/2025/03/04/email-challenges/images/phishing_email.jpg",
+    "blog/2025/03/04/email-challenges/images/learndmarc.jpg",
+    "blog/2025/03/04/email-challenges/images",
+    "blog/2025/03/04/email-challenges",
+    "blog/2025/03/04",
+    "blog/2025/03",
     "blog/2025/02/05/Ebay-Access-Denied-Issue/index.md",
     "blog/2025/02/05/Ebay-Access-Denied-Issue/images",
     "blog/2025/02/04/Vote-with-your-Knowledge/index.md",
@@ -170,12 +180,7 @@
     "blog/2025/02/04",
     "blog/2025/02",
     "blog/2025/02/04/Trust-but-verify/index.md",
-    "blog/2025/02/04/Trust-but-verify",
-    "blog/2025/01/01/Hello-2025!",
-    "blog/2025/01/01",
-    "blog/2025/01",
     "blog/2025/01/01/Hello-2025!/index.md",
-    "blog/2024/12/26/favorite-thangs-in-2024/index.md",
     "blog/2024/12/26/favorite-thangs-in-2024/images/bambulab_a1_mini.jpg",
     "blog/2024/12/26/favorite-thangs-in-2024/images/steamdeck.jpg",
     "blog/2024/12/26/favorite-thangs-in-2024/images/hinamatsuri.jpg",
@@ -199,7 +204,6 @@
     "blog/2024/12/24/here-again-today/index.md",
     "blog/2024/12/24/new-post/index.md",
     "templates/post.md",
-    "blog/2024/12/24/another-note/index.md",
-    "blog/2024/12/24/here-we-go-today/index.md"
+    "blog/2024/12/24/another-note/index.md"
   ]
 }
