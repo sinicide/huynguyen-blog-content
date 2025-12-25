@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8ccfa0868a34b323",
+        "id": "9b70a0915b1318e0",
         "type": "tabs",
         "children": [
           {
-            "id": "67cd4d78ed7c216c",
+            "id": "07c69eb4e461e437",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "blog/2025/12/24/favorite-thangs-in-2025/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
             }
           }
         ]
@@ -160,8 +164,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "67cd4d78ed7c216c",
+  "active": "3983787af7b8dc56",
   "lastOpenFiles": [
+    "blog/2024/12/26/favorite-thangs-in-2024/images/a_man_and_his_cat.jpg",
+    "blog/2025/12/24/favorite-thangs-in-2025/index.md",
+    "blog/2024/12/26/favorite-thangs-in-2024/index.md",
+    "blog/2025/12/24/favorite-thangs-in-2025/images",
+    "blog/2025/12/24/favorite-thangs-in-2025",
+    "blog/2025/12/24",
+    "blog/2025/12",
+    "blog/2025/12/24/favorite-thangs-in-2025/images",
     "blog/2025/09/19/Setting-up-a-Fresh-Worktop/index.md",
     "blog/2025/03/04/email-challenges/index.md",
     "blog/2025/03/25/Setting-a-Fresh-Worktop/index.md",
@@ -170,16 +182,10 @@
     "blog/2025/09",
     "blog/2025/03/25/Setting-a-Fresh-Worktop",
     "blog/2025/03/25/Personal-Tech-Security-for-International-Travel",
-    "blog/2025/03/25",
-    "blog/2024/12/26/favorite-thangs-in-2024/index.md",
     "blog/2025/03/04/Email-Challenges/images/smtp2go.png",
     "blog/2025/03/04/email-challenges/images/smtp2go.jpg",
     "blog/2025/03/04/email-challenges/images/phishing_email.jpg",
     "blog/2025/03/04/email-challenges/images/learndmarc.jpg",
-    "blog/2025/03/04/email-challenges/images",
-    "blog/2025/03/04/email-challenges",
-    "blog/2025/03/04",
-    "blog/2025/03",
     "blog/2025/02/05/Ebay-Access-Denied-Issue/index.md",
     "blog/2025/02/04/Vote-with-your-Knowledge/index.md",
     "blog/2025/02/04/Trust-but-verify/index.md",
@@ -203,8 +209,6 @@
     "blog/2024/09/moving-apartments-and-moving-the-home-lab/index.md",
     "blog/2024/12/24/here-again-mother/index.md",
     "blog/2024/12/24/here-we-go-again-tim/index.md",
-    "blog/2024/12/24/another-post/index.md",
-    "blog/2024/12/24/here-again-today/index.md",
-    "blog/2024/12/24/new-post/index.md"
+    "blog/2024/12/24/another-post/index.md"
   ]
 }
