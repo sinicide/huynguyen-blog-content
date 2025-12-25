@@ -2,7 +2,7 @@
 layout: blog
 title: Favorite Thangs in 2025
 date: 2025-12-24T16:53:17-06:00
-lastMod: 2025-12-25T00:16:54-06:00
+lastMod: 2025-12-25T00:37:40-06:00
 categories:
   - personal
 tags:
@@ -38,7 +38,7 @@ While the first movie was a "horror" movie, this one was anything but that. It w
 This was an amazing super hero movie, we got a very boy scout Superman in this, which is great. The Justice Gang was amazing, loved the casting there. Oh and we cannot talk enough about how good of a boy Krypto was.
 
 ### Thunderbolts* (2025)
-{{< image src="https://r2.huynguyen.me/blog/2025/12/24/favorite-thangs-in-2025/images/thhunderbolts.jpg" alt="Thunderbolts* (2025)" >}}
+{{< image src="https://r2.huynguyen.me/blog/2025/12/24/favorite-thangs-in-2025/images/thunderbolts.jpg" alt="Thunderbolts* (2025)" >}}
 In terms of favorite Super Hero movie of the year, it has to be Thunderbolts. This one hit all the notes for me, comedy, action, and real underlying story of depression and grief. This was definitely 🧑🏽‍🍳😘
 
 ### Beginners (2010)
@@ -57,7 +57,7 @@ I like a lot of weird little movies that Bill Murray is in, but this one staring
 I watched a lot of shows this year, so I've tried to keep this list tidy. Here we go!
 
 ### The Residence
-{{< image src="https://r2.huynguyen.me/blog/2025/12/24/favorite-thangs-in-2025/images/thhe_residence.jpg" alt="The Residence" >}}
+{{< image src="https://r2.huynguyen.me/blog/2025/12/24/favorite-thangs-in-2025/images/the_residence.jpg" alt="The Residence" >}}
 Staring Uzo Aduba as Cordelia Cupp, this detective murder mystery series was amazing. I loved everything about it, the quirkiness of the characters, the mystery of the murder, it was just great. I really wished people enjoyed it more to get a second season.
 
 ### Alien: Earth
